@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Brendan Kellams",
   "license": "MIT",
+  "engines": {
+    "npm": "6.5.0",
+    "node": "8.9.1"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
