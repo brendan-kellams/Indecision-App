@@ -1,21 +1,18 @@
 {
-  "homepage": "http://brendan-kellams.github.io/Indecision-App",
+  "homepage": "https://github.com/brendan-kellams/Indecision-App#readme",
   "name": "indecision-app",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Brendan Kellams",
   "license": "MIT",
-  "engines": {
-    "npm": "6.5.0",
-    "node": "8.9.1"
-  },
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "yarn run build"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -25,6 +22,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
+    "express": "^4.16.4",
     "live-server": "^1.2.0",
     "node-sass": "4.5.3",
     "normalize.css": "7.0.0",
@@ -47,6 +45,5 @@
   },
   "bugs": {
     "url": "https://github.com/brendan-kellams/Indecision-App/issues"
-  },
-  "homepage": "https://github.com/brendan-kellams/Indecision-App#readme"
+  }
 }
